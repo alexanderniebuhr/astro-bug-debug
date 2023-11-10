@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "dependencies": {
     "@astrojs/cloudflare": "0.0.0-cf-assets-compile-20231110114527",
-    "astro": "file:.yalc/astro"
+    "astro": "3.5.2"
   },
   "devDependencies": {
     "sharp": "0.32.6"

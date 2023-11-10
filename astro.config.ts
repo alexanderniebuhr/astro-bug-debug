@@ -11,12 +11,4 @@ export default defineConfig({
       imageService: "compile",
     }),
   ],
-  markdown: {
-    shikiConfig: {
-      experimentalThemes: {
-        light: "github-light",
-        dark: "github-dark",
-      },
-    },
-  },
 });
