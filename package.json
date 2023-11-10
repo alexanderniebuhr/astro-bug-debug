@@ -1,0 +1,16 @@
+{
+  "name": "@astrojs/debug",
+  "private": true,
+  "version": "0.0.0",
+  "dependencies": {
+    "@astrojs/cloudflare": "0.0.0-cf-assets-compile-20231110114527",
+    "astro": "file:.yalc/astro"
+  },
+  "devDependencies": {
+    "sharp": "0.32.6"
+  },
+  "scripts": {
+    "build": "DEBUG=astro:* astro build"
+  },
+  "type": "module"
+}
