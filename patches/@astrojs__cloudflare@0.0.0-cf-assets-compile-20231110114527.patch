@@ -1,0 +1,12 @@
+diff --git a/dist/index.js b/dist/index.js
+index f27084ceb4a0d62a6ef7228a49cfc9fd3e706408..0f4f0c2671f06e1de1372062d2cc895f4ee9bb4c 100644
+--- a/dist/index.js
++++ b/dist/index.js
+@@ -67,6 +67,7 @@ export default function createIntegration(args) {
+                     },
+                     image: prepareImageConfig(args?.imageService ?? 'DEFAULT', config.image, command, logger),
+                 });
++                console.log("DEBUG:", prepareImageConfig(args?.imageService ?? 'DEFAULT', config.image, command, logger))
+             },
+             'astro:config:done': ({ setAdapter, config, logger }) => {
+                 setAdapter(getAdapter({ isModeDirectory, functionPerRoute }));

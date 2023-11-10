@@ -1,0 +1,2 @@
+node = "stable"
+pnpm = "8.10.2"

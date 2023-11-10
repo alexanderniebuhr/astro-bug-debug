@@ -12,5 +12,10 @@
   "scripts": {
     "build": "DEBUG=astro:* astro build"
   },
-  "type": "module"
+  "type": "module",
+  "pnpm": {
+    "patchedDependencies": {
+      "@astrojs/cloudflare@0.0.0-cf-assets-compile-20231110114527": "patches/@astrojs__cloudflare@0.0.0-cf-assets-compile-20231110114527.patch"
+    }
+  }
 }
