@@ -1,36 +1,8 @@
 ---
 export const prerender = true;
 
-import { Image, Picture } from "astro:assets";
+import { Image } from "astro:assets";
 import lighthouse from "../assets/lighthouse.jpg";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <link
-      rel="icon"
-      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%2210 0 100 100%22><text y=%22.90em%22 font-size=%2290%22>😎</text></svg>"
-    />
-    <title>Terra Astralis</title>
-  </head>
-  <body>
-    <pre>Original: 2048x2048 -| 512x512</pre>
-    <img src={lighthouse.src} width="512" alt="Lighthouse" />
-
-    <pre>Optimized: 512x512 -| 512x512</pre>
-    <Image src={lighthouse} width="512" quality="100" alt="Lighthouse" />
-
-    <pre>Multiple: 128x128,256x256,512x512</pre>
-    <Picture
-      src={lighthouse}
-      width="512"
-      formats={["avif", "webp"]}
-      widths={[128, 256, 512]}
-      quality="100"
-      alt="Lighthouse"
-    />
-  </body>
-</html>
+<Image src={lighthouse} width="512" quality="100" alt="Lighthouse" />

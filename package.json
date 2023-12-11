@@ -4,13 +4,14 @@
   "version": "0.0.0",
   "dependencies": {
     "@astrojs/cloudflare": "0.0.0-cf-assets-compile-20231110114527",
-    "astro": "3.5.2"
+    "astro": "3.5.6"
   },
   "devDependencies": {
     "sharp": "0.32.6"
   },
   "scripts": {
-    "build": "DEBUG=astro:* astro build"
+    "build": "astro build",
+    "debug": "DEBUG=astro:* astro build"
   },
   "type": "module"
 }
